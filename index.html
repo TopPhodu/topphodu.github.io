@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Principal Software Engineer portfolio for Puneet Nahata. Distributed systems, high-scale backend architecture, and platform modernization.">
+  <title>Puneet Nahata | Principal Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <script defer src="chat.js"></script>
+</head>
+<body data-theme="dark" data-chat-endpoint="https://puneet-digital-twin.puneet-nahata.workers.dev">
+  <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="container nav-shell" aria-label="Primary navigation">
+      <a href="#top" class="brand" aria-label="Go to top">
+        <span class="brand-mark">PN</span>
+        <span class="brand-stack">
+          <span class="brand-text">Puneet Nahata</span>
+          <span class="brand-sub">Principal Engineer</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme" aria-live="polite">
+        <span class="theme-icon" aria-hidden="true"></span>
+        <span class="theme-label">Light mode</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container reveal" id="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Principal Software Engineer</p>
+        <h1>Engineering platforms that stay fast under extreme load.</h1>
+        <p class="hero-text">
+          I design revenue-critical distributed systems with a focus on low latency, high availability, and measurable business outcomes.
+          Over 18 years, I have shipped platforms handling roughly 100K to 15M+ TPS, from steady traffic to peak events, across Amazon, JPMorgan Chase, and OTA travel platforms like Priceline.
+        </p>
+        <div class="metric-row" aria-label="Key scale metrics">
+          <span class="metric">15M+ TPS peak traffic</span>
+          <span class="metric">&lt;40ms p99 latency</span>
+          <span class="metric">99.99% uptime</span>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">Contact</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/puneetnahata" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn btn-ghost" href="puneet_nahata_principal_resume.md" download>Resume</a>
+        </div>
+      </div>
+
+      <aside class="hero-visual" aria-label="Profile image">
+        <div class="profile-ring">
+          <img src="assets/PuneetNahata.jpg" alt="Puneet Nahata">
+        </div>
+        <div class="profile-note">
+          <p>Building resilient architecture for AdTech, FinTech, E-commerce and Travel platforms at enterprise scale.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section container reveal" id="about">
+      <div class="section-head">
+        <p class="eyebrow">About Me</p>
+        <h2>Technical depth with product and business focus</h2>
+      </div>
+      <div class="about-grid">
+        <p>
+          I specialize in backend architecture where performance and reliability directly impact revenue. My work centers on distributed, event-driven systems, modern service design, and disciplined performance engineering.
+        </p>
+        <p>
+          I lead through architecture, standards, and mentoring. Teams rely on me to modernize legacy stacks, reduce cost, and deliver systems that scale without trading away developer velocity or operational confidence.
+        </p>
+      </div>
+      <ul class="strength-list" aria-label="Core strengths">
+        <li>High-throughput distributed systems and low-latency service design</li>
+        <li>Cloud-native modernization across AWS, Kubernetes, and microservices</li>
+        <li>Reliability practices: observability, fault tolerance, and production readiness</li>
+        <li>Cross-team architecture leadership and engineering mentorship</li>
+      </ul>
+    </section>
+
+    <section class="section container reveal" id="journey">
+      <div class="section-head">
+        <p class="eyebrow">Career Journey</p>
+        <h2>Impact across AdTech, FinTech and travel platforms</h2>
+      </div>
+
+      <div class="timeline" role="list">
+        <article class="timeline-item" role="listitem">
+          <button class="timeline-toggle" type="button" aria-expanded="true">
+            <span>
+              <strong>JPMorgan Chase</strong>
+              <span>Senior Lead Software Engineer</span>
+            </span>
+            <span class="timeline-meta">Nov 2025 - Present</span>
+          </button>
+          <div class="timeline-panel is-open">
+            <ul>
+              <li>Leading re-architecture of Chase Travel systems aligned to firm engineering and security standards.</li>
+              <li>Supporting platform workflows powering a $10B+ annual bookings business.</li>
+              <li>Driving modernization to resilient service-oriented architecture with stronger observability and fault tolerance.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item" role="listitem">
+          <button class="timeline-toggle" type="button" aria-expanded="false">
+            <span>
+              <strong>Amazon</strong>
+              <span>Software Engineer | AdTech</span>
+            </span>
+            <span class="timeline-meta">2022 - 2025</span>
+          </button>
+          <div class="timeline-panel">
+            <ul>
+              <li>Architected Programmable Bidder, an AdTech Demand-Side Platform (DSP), improving bid optimization by 40% and revenue per impression by 25%.</li>
+              <li>Delivered Pod Bidding for Prime Video Ads, creating a monetization stream generating $100M+ annually.</li>
+              <li>Scaled auction systems to 15M+ TPS peaks across 22K+ hosts at 99.99% uptime and sub-40ms p99 latency.</li>
+              <li>Reduced infrastructure spend by $2M+ annually through multi-layer caching and resource optimization.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item" role="listitem">
+          <button class="timeline-toggle" type="button" aria-expanded="false">
+            <span>
+              <strong>M&amp;T Bank</strong>
+              <span>Principal Engineer</span>
+            </span>
+            <span class="timeline-meta">2021 - 2022</span>
+          </button>
+          <div class="timeline-panel">
+            <ul>
+              <li>Built DevPortal to standardize internal tools and accelerate onboarding and delivery.</li>
+              <li>Created a secure service framework that reduced boilerplate and shortened service build time.</li>
+              <li>Drove cloud-native and event-driven engineering standards through design reviews and technical mentoring.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item" role="listitem">
+          <button class="timeline-toggle" type="button" aria-expanded="false">
+            <span>
+              <strong>Amazon</strong>
+              <span>Software Engineer | Seller Systems</span>
+            </span>
+            <span class="timeline-meta">2019 - 2021</span>
+          </button>
+          <div class="timeline-panel">
+            <ul>
+              <li>Engineered data transformation systems for 20M+ sellers with sustained 150K TPS throughput.</li>
+              <li>Led migrations from legacy infrastructure to AWS to improve reliability and scalability.</li>
+              <li>Implemented OAuth2 service security and robust testing practices across team-owned services.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item" role="listitem">
+          <button class="timeline-toggle" type="button" aria-expanded="false">
+            <span>
+              <strong>Priceline</strong>
+              <span>Senior Software Engineer</span>
+            </span>
+            <span class="timeline-meta">2014 - 2019</span>
+          </button>
+          <div class="timeline-panel">
+            <ul>
+              <li>Led Vacation Packages platform redesign that contributed to 2x annual booking revenue growth.</li>
+              <li>Built a 50TB+ distributed cache platform at 30K TPS and under 25ms latency.</li>
+              <li>Improved itinerary relevance by 85%, API performance by 30%, and reduced cart abandonment by 25%.</li>
+              <li>Redesigned airline search systems and expanded provider integrations, increasing market reach by 35%.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="timeline-item" role="listitem">
+          <button class="timeline-toggle" type="button" aria-expanded="false">
+            <span>
+              <strong>Cognizant &amp; Infosys</strong>
+              <span>Early Career Foundations</span>
+            </span>
+            <span class="timeline-meta">2007 - 2014</span>
+          </button>
+          <div class="timeline-panel">
+            <ul>
+              <li>Built multi-tier enterprise applications and workflow automation across diverse client environments.</li>
+              <li>Supported production releases and incident management in high-accountability delivery models.</li>
+              <li>Developed leadership depth by guiding distributed teams and improving execution discipline.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="projects">
+      <div class="section-head">
+        <p class="eyebrow">Architecture Highlights</p>
+        <h2>Platforms built for scale, resilience, and revenue impact</h2>
+      </div>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Programmable Bidder</h3>
+          <p>Real-time bidding architecture enabling custom demand strategies with controlled latency budgets.</p>
+          <p class="card-metric">+40% bid optimization, +25% revenue per impression</p>
+        </article>
+
+        <article class="card">
+          <h3>Prime Video Pod Bidding</h3>
+          <p>End-to-end design and launch of pod-level bidding workflows for large event traffic and ad quality constraints.</p>
+          <p class="card-metric">$100M+ annual monetization stream</p>
+        </article>
+
+        <article class="card">
+          <h3>Distributed Airlines Cache</h3>
+          <p>50TB+ cache and indexing layer with custom sharding and observability for predictable low-latency reads.</p>
+          <p class="card-metric">30K TPS, &lt;25ms latency</p>
+        </article>
+
+        <article class="card">
+          <h3>High-Scale Platform Reliability</h3>
+          <p>Systematic reliability and performance engineering across large fleets and peak events.</p>
+          <p class="card-metric">22K+ hosts, 99.99% uptime, 15M+ TPS peak</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container reveal" id="skills">
+      <div class="section-head">
+        <p class="eyebrow">Skills &amp; Expertise</p>
+        <h2>Deep backend and architecture capabilities</h2>
+      </div>
+
+      <div class="skill-groups">
+        <article class="skill-group">
+          <h3>Backend Engineering</h3>
+          <div class="tag-wrap">
+            <span>Java</span><span>Spring Boot</span><span>REST</span><span>gRPC</span><span>Concurrency</span>
+          </div>
+        </article>
+        <article class="skill-group">
+          <h3>Distributed Systems</h3>
+          <div class="tag-wrap">
+            <span>Event-driven Design</span><span>Fault Tolerance</span><span>Caching</span><span>Latency Optimization</span><span>Load Management</span>
+          </div>
+        </article>
+        <article class="skill-group">
+          <h3>Cloud &amp; Infrastructure</h3>
+          <div class="tag-wrap">
+            <span>AWS</span><span>Kubernetes</span><span>Docker</span><span>CI/CD</span><span>Observability</span>
+          </div>
+        </article>
+        <article class="skill-group">
+          <h3>Data Systems</h3>
+          <div class="tag-wrap">
+            <span>MySQL</span><span>DynamoDB</span><span>Redis</span><span>Elasticsearch</span><span>Kafka</span>
+          </div>
+        </article>
+      </div>
+    </section>
+<!--
+    <section class="section container reveal" id="portfolio">
+      <div class="section-head">
+        <p class="eyebrow">Portfolio</p>
+        <h2>Projects coming soon</h2>
+      </div>
+      <div class="portfolio-grid" aria-label="Portfolio placeholders">
+        <article class="portfolio-placeholder"><p>Case Study Slot 01</p></article>
+        <article class="portfolio-placeholder"><p>Case Study Slot 02</p></article>
+        <article class="portfolio-placeholder"><p>Case Study Slot 03</p></article>
+      </div>
+    </section>
+-->
+    <section class="section container reveal" id="contact">
+      <div class="section-head">
+        <p class="eyebrow">Contact</p>
+        <h2>Open to principal and staff-level engineering conversations</h2>
+      </div>
+      <div class="contact-shell">
+        <!-- TODO add contact me form -->
+        <a href="https://www.linkedin.com/in/puneetnahata" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Puneet Nahata.</p>
+    </div>
+  </footer>
+
+  <button
+    class="chat-fab"
+    id="chat-fab"
+    type="button"
+    aria-controls="chat-panel"
+    aria-expanded="false"
+    aria-label="Open Digital Twin chat"
+  >
+    <span class="chat-fab-icon" aria-hidden="true">*</span>
+    <span>Ask Digital Twin</span>
+  </button>
+
+  <section class="chat-panel" id="chat-panel" aria-hidden="true" aria-label="Digital Twin assistant">
+    <header class="chat-header">
+      <div>
+        <p class="chat-title">Digital Twin</p>
+        <p class="chat-subtitle">Career assistant grounded in resume facts</p>
+      </div>
+      <div class="chat-header-actions">
+        <button class="chat-reset" id="chat-reset" type="button" aria-label="Start a new chat session">New Chat</button>
+        <button class="chat-close" id="chat-close" type="button" aria-label="Close chat panel">x</button>
+      </div>
+    </header>
+
+    <div class="chat-body">
+      <div class="chat-starters" id="chat-starters" aria-label="Suggested prompts">
+        <button type="button" class="starter-chip">What are your strongest technical areas?</button>
+        <button type="button" class="starter-chip">Tell me about your Amazon AdTech impact.</button>
+        <button type="button" class="starter-chip">What scale and latency have you handled?</button>
+      </div>
+      <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-label="Chat messages"></div>
+      <div class="chat-typing" id="chat-typing" hidden>
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <form class="chat-form" id="chat-form" aria-label="Send message">
+      <label for="chat-input" class="sr-only">Type your question</label>
+      <textarea
+        id="chat-input"
+        class="chat-input"
+        rows="1"
+        maxlength="600"
+        placeholder="Ask about experience, projects, scale, or skills..."
+        required
+      ></textarea>
+      <button class="chat-send" id="chat-send" type="submit">Send</button>
+    </form>
+  </section>
+</body>
+</html>
