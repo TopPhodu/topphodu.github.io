@@ -119,26 +119,64 @@ img {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.75rem;
+  padding: 0.38rem 0.76rem 0.38rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--surface-strong), transparent 12%), color-mix(in srgb, var(--surface), transparent 2%));
+  box-shadow: 0 8px 26px rgba(201, 127, 47, 0.14);
   text-decoration: none;
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.brand:hover {
+  border-color: var(--line-strong);
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(201, 127, 47, 0.22);
 }
 
 .brand-mark {
-  width: 2rem;
-  height: 2rem;
+  width: 2.18rem;
+  height: 2.18rem;
   border-radius: 0.65rem;
   display: grid;
   place-items: center;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 700;
+  font-size: 0.84rem;
+  font-weight: 800;
   border: 1px solid var(--line-strong);
-  background: linear-gradient(145deg, rgba(77, 201, 243, 0.18), rgba(133, 247, 194, 0.14));
+  background: linear-gradient(145deg, rgba(242, 179, 110, 0.24), rgba(240, 205, 165, 0.16));
+  box-shadow: 0 8px 24px rgba(201, 127, 47, 0.2);
+}
+
+.brand-stack {
+  display: grid;
+  gap: 0.02rem;
+  line-height: 1.05;
 }
 
 .brand-text {
+  font-weight: 800;
+  letter-spacing: 0.012em;
+  color: var(--text);
+  background: linear-gradient(92deg, color-mix(in srgb, var(--text), white 8%), color-mix(in srgb, var(--primary), var(--accent) 48%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 14px rgba(201, 127, 47, 0.18);
+  transition: color 180ms ease, text-shadow 180ms ease;
+}
+
+.brand:hover .brand-text {
+  text-shadow: 0 4px 20px rgba(201, 127, 47, 0.3);
+}
+
+.brand-sub {
+  font-size: 0.64rem;
   font-weight: 700;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
 }
 
 .nav-links {
@@ -595,6 +633,10 @@ h3 {
 
 @media (max-width: 760px) {
   .brand-text {
+    font-size: 1.02rem;
+  }
+
+  .brand-sub {
     display: none;
   }
 
