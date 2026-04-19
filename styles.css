@@ -1,31 +1,31 @@
 :root {
-  --bg: #0a0d14;
-  --bg-soft: #111623;
-  --surface: rgba(18, 24, 38, 0.78);
-  --surface-strong: rgba(21, 29, 47, 0.96);
-  --text: #e9eefb;
-  --text-muted: #9da7bf;
-  --line: rgba(174, 192, 230, 0.2);
-  --line-strong: rgba(174, 192, 230, 0.36);
-  --primary: #59d6ff;
-  --primary-strong: #2bb7ea;
-  --accent: #85f7c2;
-  --shadow: 0 24px 80px rgba(3, 7, 18, 0.44);
+  --bg: #120e0a;
+  --bg-soft: #1c1611;
+  --surface: rgba(35, 27, 20, 0.78);
+  --surface-strong: rgba(43, 32, 24, 0.96);
+  --text: #f6ede3;
+  --text-muted: #c9b7a4;
+  --line: rgba(245, 188, 123, 0.2);
+  --line-strong: rgba(245, 188, 123, 0.36);
+  --primary: #f2b36e;
+  --primary-strong: #d8944b;
+  --accent: #f0cda5;
+  --shadow: 0 24px 80px rgba(22, 15, 8, 0.5);
 }
 
 body[data-theme="light"] {
-  --bg: #f3f6fc;
-  --bg-soft: #e8eef8;
-  --surface: rgba(255, 255, 255, 0.78);
-  --surface-strong: rgba(255, 255, 255, 0.95);
-  --text: #101726;
-  --text-muted: #4e5b74;
-  --line: rgba(28, 44, 81, 0.14);
-  --line-strong: rgba(28, 44, 81, 0.26);
-  --primary: #0f8fc1;
-  --primary-strong: #08698f;
-  --accent: #1c8f61;
-  --shadow: 0 24px 80px rgba(40, 68, 119, 0.16);
+  --bg: #fff8ef;
+  --bg-soft: #f6ebde;
+  --surface: rgba(255, 252, 247, 0.8);
+  --surface-strong: rgba(255, 250, 243, 0.96);
+  --text: #2a1c12;
+  --text-muted: #715845;
+  --line: rgba(168, 115, 61, 0.18);
+  --line-strong: rgba(168, 115, 61, 0.28);
+  --primary: #c97f2f;
+  --primary-strong: #a7631e;
+  --accent: #de9d57;
+  --shadow: 0 24px 80px rgba(122, 73, 31, 0.16);
 }
 
 *,
@@ -43,8 +43,8 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 10% -20%, rgba(47, 177, 227, 0.22), transparent 55%),
-    radial-gradient(circle at 90% 10%, rgba(98, 232, 181, 0.16), transparent 45%),
+    radial-gradient(circle at 10% -20%, rgba(242, 175, 102, 0.22), transparent 55%),
+    radial-gradient(circle at 90% 10%, rgba(214, 145, 74, 0.14), transparent 45%),
     var(--bg);
   line-height: 1.6;
   transition: background 280ms ease, color 200ms ease;
@@ -78,7 +78,7 @@ img {
   height: 380px;
   top: -120px;
   left: -120px;
-  background: #42beed;
+  background: #e8a157;
 }
 
 .bg-orb-2 {
@@ -86,7 +86,7 @@ img {
   height: 320px;
   right: -80px;
   top: 40%;
-  background: #39c97c;
+  background: #c9803b;
 }
 
 .section {
